@@ -8,6 +8,7 @@ namespace GoatHuntAPI.Models
     public class Hunt
     {
         public int Id { get; set; }
+        public int HuntNumber { get; set; }
         public string Name { get; set; }
         public string Type { get; set; }
         public int Permits { get; set; }

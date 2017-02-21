@@ -128,9 +128,7 @@
       <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
     </Reference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
@@ -174,6 +172,10 @@
     <Compile Include="Migrations\201702211810506_Initial.Designer.cs">
       <DependentUpon>201702211810506_Initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201702211822235_AddedHuntNumber.cs" />
+    <Compile Include="Migrations\201702211822235_AddedHuntNumber.Designer.cs">
+      <DependentUpon>201702211822235_AddedHuntNumber.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicationContext.cs" />
     <Compile Include="Models\Hunt.cs" />
@@ -207,6 +209,7 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
+    <Content Include="App_Data\Data.csv" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -232,6 +235,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201702211810506_Initial.resx">
       <DependentUpon>201702211810506_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702211822235_AddedHuntNumber.resx">
+      <DependentUpon>201702211822235_AddedHuntNumber.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
